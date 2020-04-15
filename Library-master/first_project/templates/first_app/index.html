@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+
+    <title></title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="{% static  "css/mystyle.css" %}"/>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="^admin/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:8000/cs/">Recent Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:8000/allbooks/">All-books</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+  </body>
+<br>
+  <div class="card-deck">
+<div class="card text-white bg-secondary mb-3" style="max-width: 30rem;">
+  <img src="{% static "PICS\cs.png" %}" class="card-img-top" alt="pic">
+  <div class="card-body">
+    <a class="card-title" href="http://127.0.0.1:8000/program/"><h5>PROGRAMMING</h5></a>
+
+    <p class="card-text">NUMBER OF BOOKS AVALIABLE: 258</p>
+      <p class="card-text">TOTAL NUMBER OF BOOKS : 359</p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+<div class="card text-white bg-secondary mb-3" style="max-width: 30rem;">
+  <img src="{% static "PICS\eee.jpg" %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <a class="card-title" href="http://127.0.0.1:8000/eee/"><h5>ELECTRONICS</h5></a>
+    <p class="card-text">NUMBER OF BOOKS AVALIABLE: 216</p>
+    <p class="card-text">TOTAL NUMBER OF BOOKS : 259</p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+<div class="card text-white bg-secondary mb-3" style="max-width: 30rem;">
+  <img src="{% static "PICS\mat.jpg" %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <a class="card-title" href="http://127.0.0.1:8000/maths/"><h5>MATHEMATICS</h5></a>
+    <p class="card-text">NUMBER OF BOOKS AVALIABLE: 406</p>
+    <p class="card-text">TOTAL NUMBER OF BOOKS : 458</p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+<div class="card text-white bg-secondary mb-3" style="max-width: 30rem;">
+  <img src="{% static "PICS\py.jpg" %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <a class="card-title" href="http://127.0.0.1:8000/physics/"><h5>PHYSICS</h5></a>
+    <p class="card-text">NUMBER OF BOOKS AVALIABLE: 124</p>
+    <p class="card-text">TOTAL NUMBER OF BOOKS : 198</p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+</div>
+<br>
+<div class="card-deck">
+<div class="card text-white bg-secondary mb-3" style="max-width: 30rem;">
+  <img src="{% static "PICS\comics.jpg" %}"class="card-img-top" alt="...">
+  <div class="card-body">
+    <a class="card-title" href="http://127.0.0.1:8000/comics/"><h5>COMICS</h5></a>
+    <p class="card-text">NUMBER OF BOOKS AVALIABLE: 175</p>
+    <p class="card-text">TOTAL NUMBER OF BOOKS : 250</p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+<div class="card text-white bg-secondary mb-3" style="max-width: 30rem;">
+<img src="{% static "PICS\mech.jpg" %}" class="card-img-top" alt="...">
+<div class="card-body">
+<a class="card-title" href="http://127.0.0.1:8000/mech/"><h5>MECHANICS</h5></a>
+<p class="card-text">NUMBER OF BOOKS AVALIABLE: 113</p>
+<p class="card-text">TOTAL NUMBER OF BOOKS : 142</p>
+<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+</div>
+</div>
+<div class="card text-white bg-secondary mb-3" style="max-width: 30rem;">
+<img src="{% static "PICS\ece.png" %}" class="card-img-top" alt="...">
+<div class="card-body">
+<a class="card-title" href="http://127.0.0.1:8000/ece/"><h5>COMMUNICATION</h5></a>
+<p class="card-text">NUMBER OF BOOKS AVALIABLE: 96</p>
+<p class="card-text">TOTAL NUMBER OF BOOKS : 139</p>
+<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+</div>
+</div>
+<div class="card text-white bg-secondary mb-3" style="max-width: 30rem;">
+<img src="{% static "PICS\bt.jpg" %}" class="card-img-top" alt="...">
+<div class="card-body">
+<a class="card-title" href="http://127.0.0.1:8000/bt/"><h5>BIO-TECHNOLOGY</h5></a>
+<p class="card-text">NUMBER OF BOOKS AVALIABLE: 42</p>
+<p class="card-text">TOTAL NUMBER OF BOOKS : 106</p>
+<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+</div>
+</div>
+</div>
+<br>
+<div class="card-deck">
+<div class="card text-white bg-secondary mb-3" style="max-width: 30rem;">
+  <img src="{% static "PICS\chem.jpg" %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <a class="card-title" href="http://127.0.0.1:8000/che/"><h5>CHEMISTRY</h5></a>
+    <p class="card-text">NUMBER OF BOOKS AVALIABLE: 60</p>
+    <p class="card-text">TOTAL NUMBER OF BOOKS : 98</p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+<div class="card text-white bg-secondary mb-3" style="max-width: 30rem;">
+<img src="{% static "PICS\comp.jpg" %}" class="card-img-top" alt="...">
+<div class="card-body">
+<a class="card-title" href="http://127.0.0.1:8000/gk/"><h5>GENERAL KNOWLEDGE</h5></a>
+<p class="card-text">NUMBER OF BOOKS AVALIABLE: 150</p>
+<p class="card-text">TOTAL NUMBER OF BOOKS : 188</p>
+<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+</div>
+</div>
+<div class="card text-white bg-secondary mb-3" style="max-width: 30rem;">
+<img src="{% static "PICS\civil.jpg" %}" class="card-img-top" alt="...">
+<div class="card-body">
+<a class="card-title" href="http://127.0.0.1:8000/civil/"><h5>CIVIL ENGG.</h5></a>
+<p class="card-text">NUMBER OF BOOKS AVALIABLE: 44</p>
+<p class="card-text">TOTAL NUMBER OF BOOKS : 60</p>
+<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+</div>
+</div>
+<div class="card text-white bg-secondary mb-3" style="max-width: 30rem;">
+<img src="{% static "PICS\his.jpg" %}" class="card-img-top" alt="...">
+<div class="card-body">
+<a class="card-title" href="http://127.0.0.1:8000/history/"><h5>HISTORY</h5></a>
+<p class="card-text">NUMBER OF BOOKS AVALIABLE: 16</p>
+<p class="card-text">TOTAL NUMBER OF BOOKS : 67</p>
+<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+</div>
+</div>
+</div>
+</html>
